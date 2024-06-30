@@ -5,8 +5,9 @@ import { responseUtil } from '../utils/response.util';
 const router = Router();
 
 router.get('/', (req, res) => {
-  logger.debug('Hello from HRI API');
+  logger.debug('Entering GET /');
   responseUtil.success(res, 'Hello from HRI API');
+  logger.debug('Exiting GET /');
 });
 
 export default router;
